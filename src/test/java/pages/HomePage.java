@@ -23,6 +23,8 @@ public class HomePage {
     String txtAccountCode = "text='genesis-input'";
     String lnkSweepingDashboard = "text='Sweeping Dashboard'";
     String popDismiss = "text='Dismiss'";
+    String txtBBGbox = "text=Bloomberg Account Code";
+
 
 
     //This is a method to click the configuration link on the Home page
@@ -45,7 +47,10 @@ public class HomePage {
         page.fill(txtBaccountcode, accountcode);
         return true;
     }
-
+ public boolean captureTheBBGAccount(String bbgbox){
+        page.fill(txtBBGbox,bbgbox);
+        return true;
+ }
     public void clickSave() {
         page.isVisible(btnSave);
         page.click(btnSave);

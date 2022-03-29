@@ -104,4 +104,10 @@ public class stepdefinitions {
         homePage.clickDismiss();
 
     }
+
+    @And("I enter Bloombergcode as {string}")
+    public void iEnterBloombergcodeAs(String bbgbox) {
+        HomePage homePage = new HomePage();
+        homePage.captureTheBBGAccount(bbgbox);
+    }
 }

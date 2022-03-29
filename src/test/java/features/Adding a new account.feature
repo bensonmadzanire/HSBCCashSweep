@@ -28,4 +28,4 @@ Feature: Adding the new account
     And   I click save button
     And   I click dismiss pop up message
     And   i click the accounts tab
-       #And   I enter the Bloombergcode as "HH2223H4"
+    And   I enter Bloombergcode as "HH224K"
